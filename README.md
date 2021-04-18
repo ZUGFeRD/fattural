@@ -17,3 +17,24 @@ and run
 The output will be InvoiceNet JSON, the input can be any UN/CEFACT CII 2016b file, like XRechnung, or 
 XML extracted from Factur-X/ZUGFeRD 2 files e.g. using [Mustangs](https://www.mustangproject.org/commandline/) 
 `--action=extract` on the commandline. 
+
+Download and install  [InvoiceNet](https://github.com/naiveHobo/InvoiceNet)
+```
+sudo apt install git python3-pip
+sudo ln -s /usr/bin/pip3 /usr/bin/pip
+pip install virtualenv
+
+git clone https://github.com/naiveHobo/InvoiceNet.git
+cd InvoiceNet/
+./install.sh
+```
+
+notes 
+```
+apt-get install python3.8-venv
+
+./install.sh: Zeile 7: virtualenv: Befehl nicht gefunden
+./install.sh: Zeile 8: env/bin/activate: Datei oder Verzeichnis nicht gefunden
+./install.sh: Zeile 10: pip: Befehl nicht gefunden
+
+```
