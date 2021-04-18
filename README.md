@@ -20,9 +20,8 @@ XML extracted from Factur-X/ZUGFeRD 2 files e.g. using [Mustangs](https://www.mu
 
 Download and install  [InvoiceNet](https://github.com/naiveHobo/InvoiceNet)
 ```
-sudo apt install git python3-pip
+sudo apt install git python3-pip python3-venv virtualenv
 sudo ln -s /usr/bin/pip3 /usr/bin/pip
-pip install virtualenv
 
 git clone https://github.com/naiveHobo/InvoiceNet.git
 cd InvoiceNet/
@@ -31,7 +30,6 @@ cd InvoiceNet/
 
 notes 
 ```
-apt-get install python3.8-venv
 
 ./install.sh: Zeile 7: virtualenv: Befehl nicht gefunden
 ./install.sh: Zeile 8: env/bin/activate: Datei oder Verzeichnis nicht gefunden
