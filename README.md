@@ -34,5 +34,23 @@ java -jar ~/Downloads/Mustang-CLI-2.1.1.jar --action=extract --source=Avoir_FR_t
 saxon-xslt FNFE-factur-x-examples/Avoir_FR_type380_BASIC.xml fattural/xslt.xsl > Avoir_FR_type380_BASIC.json
 
 find corpus-master/ZUGFeRDv2/correct -name "*.pdf"
+```
+
+Download and install  [InvoiceNet](https://github.com/naiveHobo/InvoiceNet)
+sudo apt install git python3-pip python3-venv virtualenv python3-tk
+sudo ln -s /usr/bin/pip3 /usr/bin/pip
+pip install numpy pdf2image
+
+git clone https://github.com/naiveHobo/InvoiceNet.git
+cd InvoiceNet/
+./install.sh
+```
+notes 
+```
+ERROR: tensorflow 2.3.0 has requirement numpy<1.19.0,>=1.16.0, but you'll have numpy 1.19.5 which is incompatible.
+
+./install.sh: Zeile 7: virtualenv: Befehl nicht gefunden
+./install.sh: Zeile 8: env/bin/activate: Datei oder Verzeichnis nicht gefunden
+./install.sh: Zeile 10: pip: Befehl nicht gefunden
 
 ```
